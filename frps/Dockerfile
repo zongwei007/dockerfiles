@@ -13,4 +13,4 @@ WORKDIR /opt/frps
 
 COPY --from=builder /tmp/frp_linux_amd64/frps* /opt/frps/
 
-ENTRYPOINT ["frps", "-c", "/opt/frps/frps.ini"]
+ENTRYPOINT ["/opt/frps/frps", "-c", "/opt/frps/frps.ini"]
