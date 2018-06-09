@@ -13,4 +13,4 @@ WORKDIR /opt/frpc
 
 COPY --from=builder /tmp/frp_linux_amd64/frpc* /opt/frpc/
 
-ENTRYPOINT ["frpc", "-c", "/opt/frpc/frpc.ini"]
+ENTRYPOINT ["/opt/frpc/frpc", "-c", "/opt/frpc/frpc.ini"]
