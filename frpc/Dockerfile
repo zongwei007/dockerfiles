@@ -1,6 +1,6 @@
 FROM ubuntu as builder
 
-ENV FRP_VERSION 0.22.0
+ENV FRP_VERSION 0.24.1
 
 RUN apt-get update \
   && apt-get install -y wget
